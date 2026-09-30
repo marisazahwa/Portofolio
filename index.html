@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Marisa</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #0f172a;
+        color: #ffffff;
+        line-height: 1.6;
+      }
+
+      /* Navbar */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 8%;
+        background-color: #0f172a;
+      }
+
+      .logo {
+        font-size: 22px;
+        font-weight: bold;
+        color: #e91e63;
+      }
+
+      nav a {
+        color: #a0a0a0;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 14px;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #ffffff;
+      }
+
+      /* Hero Section */
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 8%;
+        gap: 40px;
+      }
+
+      .hero-text {
+        max-width: 600px;
+      }
+
+      .badge {
+        background-color: #26182c;
+        color: #e91e63;
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .hero-text h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+      }
+
+      .hero-text h2 {
+        font-size: 18px;
+        color: #e91e63;
+        margin-bottom: 15px;
+        font-weight: 500;
+      }
+
+      .hero-text p {
+        color: #8b949e;
+        font-size: 14px;
+        margin-bottom: 25px;
+      }
+
+      .btn-group {
+        display: flex;
+        gap: 15px;
+      }
+
+      .btn-primary {
+        background-color: #e91e63;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .btn-secondary {
+        border: 1px solid #30363d;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      /* Avatar / Foto Profile */
+      .hero-img {
+        position: relative;
+      }
+
+      .avatar-frame {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 3px solid #e91e63;
+        padding: 5px;
+        box-shadow: 0 0 20px rgba(233, 30, 99, 0.3);
+      }
+
+      .avatar-frame img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      /* Section Proyek Jualan */
+      .projects {
+        padding: 60px 8%;
+      }
+
+      .section-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .section-subtitle {
+        color: #8b949e;
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background-color: #1e293b;
+        border: 1px solid #334155;
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      .card h3 {
+        font-size: 18px;
+        color: #e91e63;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        color: #8b949e;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <div class="logo">Marisa.dev</div>
+      <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="tentang">
+      <div class="hero-text">
+        <span class="badge">Kelas XII RPL 2 • SMK Swasta Mandiri</span>
+        <h1>Halo, Saya Marisa Zahwa Aqilla</h1>
+        <h2>Junior Web Developer & Student at SMK Swasta Mandiri</h2>
+        <p>
+          Siswi aktif jurusan Rekayasa Perangkat Lunak (RPL) yang berfokus pada pengembangan aplikasi toko online (E-Commerce), sistem kasir penjualan, manajemen stok barang, serta desain antarmuka pengguna (UI/UX). Siap untuk kegiatan
+          Prakerin/Magang dan proyek kolaboratif.
+        </p>
+        <div class="btn-group">
+          <a href="#" class="btn-primary">Download CV</a>
+          <a href="#proyek" class="btn-secondary">Lihat Proyek</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <div class="avatar-frame">
+          <!-- Masukkan foto kamu di folder yang sama dan beri nama foto-kamu.jpg -->
+          <img src="foto-kamu.jpg" alt="Foto Marisa" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Proyek Jualan -->
+    <section class="projects" id="proyek">
+      <h2 class="section-title">Proyek Penjualan & E-Commerce</h2>
+      <p class="section-subtitle">Beberapa aplikasi sistem toko online dan kasir yang pernah saya kembangkan.
+        
+      </p>
+
+      <div class="project-grid">
+        <div class="card">
+          <h3>Aplikasi Toko Online (E-Commerce)</h3>
+          <p>Sistem belanja berbasis web dengan fitur keranjang belanja, integrasi payment gateway, dan kalkulasi ongkir otomatis.</p>
+        </div>
+        <div class="card">
+          <h3>Sistem Kasir (Point of Sale / POS)</h3>
+          <p>Aplikasi pencatatan transaksi penjualan toko, cetak struk belanja, dan manajemen laporan keuangan harian.</p>
+        </div>
+        <div class="card">
+          <h3>Sistem Manajemen Stok & Inventaris</h3>
+          <p>Aplikasi web untuk mengelola masuk dan keluarnya stok barang dagangan, notifikasi stok habis, dan data supplier.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+S
